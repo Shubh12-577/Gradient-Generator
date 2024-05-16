@@ -22,3 +22,7 @@ Dependencies
 Contributions
     Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
+ see a look :--
+ ![image](https://github.com/Shubh12-577/Gradient-Generator/assets/86088965/67bff9a7-1b43-496a-9472-36d9822417c1)
+
+
