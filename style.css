@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Pen Script", cursive;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #12c2e9, #c471ed);
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+*::selection {
+  background-color: #f5f5f5;
+  color: #444444;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  width: 50vw;
+  height: 60vh;
+  text-shadow: 2px 2px 2px #000000;
+}
+h2 {
+  font-size: 1.7em;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+select {
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 0.7em;
+  border: 1px solid #444444;
+  font-weight: 500;
+  text-align-last: center;
+  -moz-text-align-last: center;
+  -ms-text-align-last: center;
+}
+select:focus {
+  border: 2px solid #b3b3b3;
+}
+#noOfGradient {
+  width: 5vw;
+  height: 4vh;
+}
+#gradientStyle {
+  width: 20vw;
+  height: 4vh;
+}
+option {
+  background-color: #444444;
+}
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+}
+input[type="color"]::-moz-color-swatch {
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+input[type="color"]::-moz-color-swatch-wrapper {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 1em;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+#lable3 {
+  display: none;
+}
+.clr3 {
+  display: none;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.selectType {
+  display: flex;
+  justify-content: space-evenly;
+}
+.clr1 {
+  background-color: #12c2e9;
+}
+.clr2 {
+  background-color: #c471ed;
+}
+.clr3 {
+  background-color: #f64f59;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 0.3em;
+  }
+
+  .container {
+    height: 60vh;
+    width: 100vw;
+  }
+  #noOfGradient {
+    width: 10vw;
+  }
+  #gradientStyle {
+    width: 60vw;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Gradient Picker</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-3");
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Gradient Generator</h2>
+      <div class="selectType">
+        <select name="pickNo" id="noOfGradient">
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+        </select>
+        <select name="pickColor" id="gradientStyle">
+          <option value="linear-right" selected
+            >Linear(to-right) Gradient</option
+          >
+          <option value="linear-bottom">Linear(to-bottom) Gradient</option>
+          <option value="Radial">Radial Gradient</option>
+        </select>
+      </div>
+      <div class="inputs">
+        <label for="color1" id="lable1"
+          >Color 1
+          <input type="color" name="Color1" id="color1" value="#12c2e9" />
+        </label>
+        <label for="color2" id="lable2"
+          >Color 2
+          <input type="color" name="Color2" id="color2" value="#c471ed" />
+        </label>
+        <label for="color3" id="lable3"
+          >Color 3
+          <input type="color" name="Color3" id="color3" value="#f64f59" />
+        </label>
+      </div>
+      <p class="output">
+        Color : <span class="clr1">#12c2e9</span>
+        <span class="clr2">#c471ed</span> <span class="clr3">#f64f59</span>
+      </p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
